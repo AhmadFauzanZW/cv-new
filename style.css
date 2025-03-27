@@ -85,6 +85,8 @@ table {
     margin-bottom: 16px;
 }
 
+/* Contact Section */
+
 .contact > ul {
     list-style-type: none; /* Remove default bullet points */
 }
@@ -100,6 +102,27 @@ table {
 .contact > ul > li > span {
     font-family: 'Poppins', sans-serif;
     white-space: nowrap; /* Prevent the text from wrapping */
+    margin-left: 8px;
+}
+
+/* Language Section */
+
+.language > ul {
+    list-style-type: none;
+}
+
+.language > ul > li {
+    font-size: 18px;
+    margin-bottom: 16px;
+    display: flex;
+    
+}
+
+.language > ul > li > span {
+    font-family: 'Poppins', sans-serif;
+}
+
+.language > ul > li > p {
     margin-left: 8px;
 }
 
