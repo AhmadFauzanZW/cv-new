@@ -718,7 +718,22 @@ nav {
     transition: color 0.2s ease;
 }
 
+.contact-phone {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin-left: 1rem;
+    color: #2c5698;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.2s ease;
+}
+
 .contact-email:hover {
+    color: #d5a95d;
+}
+
+.contact-phone:hover {
     color: #d5a95d;
 }
 
