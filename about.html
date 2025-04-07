@@ -3,65 +3,175 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Portfolio showcasing Web Development, Web Scraping, Automation, and AI projects.">
-    <title>Portfolio - Your Name | Web & Python Developer</title>
+    <title>About - Ahmad Fauzan</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,200..800;1,6..72,200..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flag-icons-css@3.7.2/css/flag-icons.min.css">
 </head>
+
 <body>
     <header>
-        <h1>Portfolio</h1>
+        <div class="logo-wrapper">
+            <a href="index.html" class="logo-link">
+                <img src="The Chrono's Company Logo.png" alt="Logo" class="logo">
+            </a>
+        </div>
         <nav>
-            <a href="index.html">Home</a>
-            <a href="about.html">Portfolio</a>
-            <a href="contact.html">Contact</a>
+            <a href="index.html" class="nav-link">Home</a>
+            <a href="about.html" class="nav-link">About</a>
+            <a href="contact.html" class="nav-link">Contact</a>
         </nav>
     </header>
 
-    <main>
-        <section>
-            <h2>Featured Projects</h2>
-            <article>
-                <figure>
-                    <img src="project1.jpg" alt="Project 1 Thumbnail" width="200">
-                    <figcaption>Project 1</figcaption>
-                </figure>
-                <h2>Web Scraper</h2>
-                <p>A web scraping tool built with Python and Selenium to extract data from e-commerce websites.</p>
-                <ul>
-                    <li>Technologies: Python, Selenium, BeautifulSoup</li>
-                </ul>
-                <a href="#">View Project</a>
-            </article>
-            <!-- Repeat for other projects -->
+    <main id="about-page">
+        <section id="about">
+            <div class="about-text">
+                <h2 class="page-title">ABOUT ME</h2>
+            </div>
         </section>
 
-        <section>
-            <h2>Web Development</h2>
-            <article>
-                <h2>E-commerce Website</h2>
-                <p>A fully functional e-commerce platform built with Django and React.</p>
-                <ul>
-                    <li>Technologies: Django, React, PostgreSQL</li>
-                </ul>
-                <a href="#">View Project</a>
-            </article>
+        <!-- Profile Section -->
+        <section class="profile-section">
+            <div class="profile-upper">
+                <p class="profile-title">
+                    Web Developer | Python Expert | Web Scraping & Automation Specialist
+                </p>
+            </div>
+            <div class="profile-content">
+                <img src="Fauzan.jpg" alt="Ahmad Fauzan" class="profile-image">
+                <div class="profile-details">
+                    <p>
+                        With 3+ years of experience in full-stack development and a specialization in Python automation, I deliver robust web solutions and data extraction systems that drive business efficiency. My expertise spans custom web development, WordPress solutions, and sophisticated web scraping implementations using BeautifulSoup, Selenium, and Pandas.
+                    </p>
+                    <ul style="color: #2c5698; margin-left: 24px;">
+                        <li>Full-stack web development with modern frameworks</li>
+                        <li>WordPress customization and optimization (2+ years)</li>
+                        <li>Python automation and web scraping solutions</li>
+                        <li>Data extraction and processing pipelines</li>
+                    </ul>
+                    <p>
+                        I've successfully delivered diverse projects, including company profile websites, landing pages, community websites, e-commerce platforms, automated data collection systems, and custom WordPress solutions. Currently pursuing a Data Science degree, I combine academic knowledge with practical experience to provide data-driven solutions. My focus is on delivering clean, maintainable code and exceeding client expectations through clear communication and timely delivery.
+                    </p>
+                </div>
+                
+            </div>
         </section>
 
-        <section>
-            <h2>AI Projects</h2>
-            <article>
-                <h2>Computer Vision Model</h2>
-                <p>An AI model for object detection using TensorFlow.</p>
-                <ul>
-                    <li>Technologies: TensorFlow, Python</li>
-                </ul>
-                <a href="#">View Project</a>
-            </article>
+        <!-- Skills Section -->
+        <section class="skills-section">
+            <div class="skills-title">
+                <p>My Technical</p>
+                <h2>EXPERTISE</h2>
+            </div>
+            <table class="skills-table">
+                <tr>
+                  <td>
+                    <div class="skill-card">
+                      <i class="fa-brands fa-python skill-icon"></i>
+                      <h3>Python Development</h3>
+                      <p>Automation, Web Scraping, Data Processing</p>
+                    </div>
+                  </td>
+                  <td>
+                    <div class="skill-card">
+                      <i class="fa-solid fa-code skill-icon"></i>
+                      <h3>Web Development</h3>
+                      <p>Full-stack solutions with modern frameworks</p>
+                    </div>
+                  </td>
+                  <td>
+                    <div class="skill-card">
+                      <i class="fa-brands fa-wordpress skill-icon"></i>
+                      <h3>WordPress</h3>
+                      <p>Custom themes, plugins, and optimizations</p>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <div class="skill-card">
+                      <i class="fa-solid fa-database skill-icon"></i>
+                      <h3>Data Engineering</h3>
+                      <p>Data extraction and processing pipelines</p>
+                    </div>
+                  </td>
+                  <td>
+                    <div class="skill-card">
+                      <i class="fa-solid fa-palette skill-icon"></i>
+                      <h3>UI/UX Design</h3>
+                      <p>Figma prototyping and design systems</p>
+                    </div>
+                  </td>
+                  <td>
+                    <div class="skill-card">
+                      <i class="fa-solid fa-language skill-icon"></i>
+                      <h3>Multilingual</h3>
+                      <p>5 languages including English, Arabic, Japanese, and Chinese</p>
+                    </div>
+                  </td>
+                </tr>
+            </table>
+        </section>
+
+        <!-- Timeline Section -->
+        <section class="timeline-section">
+            <div class="timeline-title">
+                <p>My Journey</p>
+                <h2><span class="education">EDUCATION</span> & <span class="experience">EXPERIENCE</span></h2>
+            </div>
+            <div class="timeline-container">
+                <div class="timeline-line"></div>
+                
+                <!-- Education -->
+                <div class="timeline-card education">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <h3 class="timeline-title">Cakrawala University</h3>
+                        <div class="timeline-period">2024 - Present</div>
+                        <div class="timeline-degree">Bachelor's in Data Science</div>
+                        <ul class="timeline-details">
+                            <li>Advanced statistical techniques</li>
+                            <li>Machine learning</li>
+                            <li>Data visualization</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="timeline-card education alt">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <h3 class="timeline-title">MA Al-Umm Malang</h3>
+                        <div class="timeline-period">2020 - 2023</div>
+                        <div class="timeline-degree">Social Sciences</div>
+                        <ul class="timeline-details">
+                            <li>Foundation in social science theories</li>
+                            <li>Research methodologies</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <!-- Experience -->
+                <div class="timeline-card experience">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <h3 class="timeline-title">Freelance Web Developer</h3>
+                        <div class="timeline-period">2021 - Present</div>
+                        <ul class="timeline-details">
+                            <li>Delivered 15+ custom web solutions</li>
+                            <li>Automated data collection for 5+ clients</li>
+                            <li>Optimized WordPress sites improving performance by 40%</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
         </section>
     </main>
 
     <footer>
-        <p>&copy; 2023 Your Name. All rights reserved.</p>
+        <p>Copyright &copy; 2025 - Ahmad Fauzan. All rights reserved.</p>
     </footer>
 </body>
 </html>

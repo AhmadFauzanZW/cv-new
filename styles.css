@@ -31,6 +31,12 @@ header {
 
 .logo {
     height: 100%;
+    transition: 0.3s ease-in-out;
+}
+
+.logo-wrapper:hover .logo {
+    opacity: 80%;
+    transition: 0.3s ease-in-out;
 }
 
 nav {
@@ -46,6 +52,7 @@ nav {
     font-weight: 500;
     color: #2c5698;
     text-decoration: none;
+    transition: 0.3s ease-in-out;
 }
 
 .nav-link:hover {
@@ -84,9 +91,10 @@ nav {
 }
 
 .hero-details > h1 {
-    font-size: 3rem;
+    font-size: 4rem;
     font-family: 'Newsreader', sans-serif;
-    font-weight: 700;
+    font-weight: 400;
+    letter-spacing: 4px;
     color: #2c5698;
 }
 
@@ -118,6 +126,7 @@ nav {
     width: 100%;
     /* background-color: #f3f6fc; */
     background-color: #1b170e;
+    transition: 0.3s ease-in-out;
 }
 
 #about > a {
@@ -142,6 +151,7 @@ nav {
     gap: 1rem;
     color: #ffffff;
     opacity: 80%;
+    transition: 0.3s ease-in-out;
 }
 
 #about:hover {
@@ -151,7 +161,7 @@ nav {
 }
 
 #about:hover .about-cta {
-    gap: 40rem;
+    gap: 20rem;
     transition: 0.3s ease-in-out;
 }
 
@@ -159,16 +169,20 @@ nav {
     font-size: 12rem;
     /* font-family: 'Poppins', sans-serif; */
     font-family: 'Newsreader', sans-serif;
-    letter-spacing: 12px;
-    font-weight: 100;
+    letter-spacing: 4px;
+    font-weight: 400;
     color: #d5a95d;
     line-height: 50%;
     padding-top: 50px;
+    transition: 0.3s ease-in-out;
 }
 
 #about:hover .about-text > h2 {
     color: hsl(38, 59%, 80%);
     transition: 0.3s ease-in-out;
+    letter-spacing: 12px;
+    font-size: 8rem;
+    font-weight: 300;
 }
 
 /* Projects Section */
@@ -271,4 +285,341 @@ nav {
     color: #2c5698;
     font-family: 'Poppins', sans-serif;
     font-weight: 500;
+}
+
+/* ---------------------- */
+/* New CSS for About Page */
+#about-page {
+    background-color: #f8f6f1;
+}
+
+/* About Section */
+#about-page > #about {
+    padding: 8rem 42px 0;
+    height: 75vh;
+    background-image: url("Coding Background.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    align-items: start;
+    cursor: default;
+}
+
+#about-page > #about > .about-text > h2 {
+    font-size: 6rem;
+    font-weight: 500;
+    letter-spacing: 8px;
+}
+
+#about-page > #about:hover .page-title {
+    color: #d5a95d;
+}
+
+/* Profile Section */
+.profile-section {
+    background-color: #faf4eb;
+    border-radius: 3rem 3rem 0 0;
+    padding: 16px 42px 24px;
+    margin: -4rem 0 0;
+    display: flex;
+    flex-direction: column;
+    gap: 42px;
+}
+
+.profile-title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    font-size: 1.5rem;
+    color: #2c5698;
+}
+
+.profile-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 24px;
+    width: 100%;
+}
+
+.profile-image {
+    width: 30%;
+    object-fit: cover;
+    border-radius: 16px;
+    transition: 0.3s;
+}
+
+.profile-image:hover {
+    transform: scale(1.05);
+}
+
+.profile-details {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    font-size: 1rem;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: start;
+    gap: 16px;
+    width: 70%;
+}
+
+/* Skills Section */
+
+.skills-section {
+    background: #1b170e;
+    color: white;
+    border-radius: 16px;
+    padding: 42px;
+    margin: 42px;
+}
+.skills-title {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin-bottom: 24px;
+    gap: 1rem;
+}
+
+.skills-title > p {
+    font-size: 1.25rem;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    color: #fff;
+}
+
+.skills-title > h2 {
+    font-size: 4rem;
+    font-family: 'Newsreader', serif;
+    font-weight: 300;
+    letter-spacing: 4px;
+    color: #d5a95d;
+    margin-bottom: 16px;
+}
+
+.skills-table {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 24px;
+    margin: -24px 0;
+}
+  
+.skills-table td {
+    width: 33.33%;
+    padding: 0;
+    vertical-align: top;
+}
+  
+.skill-card {
+    background: rgba(255,255,255,0.1);
+    padding: 24px;
+    border-radius: 8px;
+    transition: 0.3s;
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+}
+  
+.skill-card > h3 {
+    margin-bottom: 0.5rem;
+}
+  
+.skill-card:hover {
+    background: rgba(255,255,255,0.2);
+    transform: translateY(-5px);
+}
+  
+.skill-icon {
+    font-size: 2.4rem;
+    color: #d5a95d;
+    margin-bottom: 12px;
+}
+
+/* Education & Experience Section */
+.timeline-section {
+    padding: 42px;
+    margin: 0 auto;
+    font-family: 'Poppins', sans-serif;
+}
+
+.timeline-title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+}
+.timeline-title > p {
+    font-size: 1.25rem;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    color: hsl(38, 59%, 45%);
+}
+
+.timeline-title > h2 {
+    font-size: 4rem;
+    font-family: 'Newsreader', serif;
+    font-weight: 300;
+    letter-spacing: 4px;
+    color: #000;
+    margin-bottom: 3rem;
+}
+
+.education {
+    color: #2c5496;
+}
+
+.experience {
+    color: #cb9434;
+}
+
+.timeline-container {
+    position: relative;
+}
+
+.timeline-line {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    width: 3px;
+    background: linear-gradient(to bottom, rgba(44, 86, 152, 0.3), rgba(44, 86, 152, 0.9), rgba(213, 169, 93, 0.9));
+    transform: translateX(-50%);
+    border-radius: 3px;
+}
+
+.timeline-card {
+    position: relative;
+    margin-bottom: 60px;
+    width: 100%;
+}
+
+.timeline-marker {
+    position: absolute;
+    top: 25px;
+    left: 50%;
+    width: 20px;
+    height: 20px;
+    background: #d5a95d;
+    border-radius: 50%;
+    transform: translateX(-50%);
+    box-shadow: 0 0 0 4px rgba(255, 255, 255, 0.9), 0 0 0 6px rgba(44, 86, 152, 0.3);
+    z-index: 10;
+    transition: all 0.3s ease;
+}
+
+.timeline-content {
+    width: 50%;
+    padding: 30px;
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+    transition: all 0.4s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.timeline-content::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 5px;
+    background: linear-gradient(to right, #2c5698, #d5a95d);
+}
+
+.timeline-card.education .timeline-content::before {
+    background: linear-gradient(to right, #2c5698, #4d7cc7);
+}
+
+.timeline-card.experience .timeline-content::before {
+    background: linear-gradient(to right, #d5a95d, #e8c48d);
+}
+
+.timeline-title {
+    font-family: 'Newsreader', serif;
+    color: #2c5698;
+    font-size: 1.5rem;
+    margin: 0 0 10px 0;
+    font-weight: 600;
+}
+
+.timeline-period {
+    display: inline-block;
+    font-size: 0.9rem;
+    color: #555;
+    margin-bottom: 10px;
+    padding: 3px 12px;
+    background: rgba(213, 169, 93, 0.1);
+    border-radius: 20px;
+    font-weight: 500;
+}
+
+.timeline-degree {
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 12px;
+}
+
+.timeline-details {
+    list-style-type: none;
+    padding: 0;
+    margin: 15px 0 0 0;
+}
+
+.timeline-details li {
+    position: relative;
+    padding-left: 20px;
+    margin-bottom: 8px;
+    line-height: 1.5;
+    color: #555;
+}
+
+.timeline-details li::before {
+    content: '•';
+    position: absolute;
+    left: 0;
+    color: #d5a95d;
+    font-weight: bold;
+}
+
+/* Alternating layout */
+.timeline-card:nth-child(odd) .timeline-content {
+    margin-left: auto;
+}
+
+.timeline-card:nth-child(even) .timeline-content {
+    margin-right: auto;
+}
+
+/* Hover effects */
+.timeline-card:hover .timeline-marker {
+    transform: translateX(-50%) scale(1.3);
+    background: #2c5698;
+}
+
+.timeline-card:hover .timeline-content {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.12);
+}
+
+/* footer */
+footer {
+    /* background-color: #ffffff; */
+    background-color: #2c5698;
+    padding: 24px 42px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+footer > p {
+    font-size: 1rem;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    /* color: #2c5698; */
+    color: #ffffff;
 }
