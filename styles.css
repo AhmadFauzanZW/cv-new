@@ -163,7 +163,7 @@ nav {
 #about:hover .about-cta {
     font-size: 1.25rem;
     font-weight: 400;
-    gap: 30rem;
+    gap: 28rem;
     transition: 0.3s ease-in-out;
 }
 
