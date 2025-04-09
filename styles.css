@@ -877,3 +877,564 @@ footer > p {
     /* color: #2c5698; */
     color: #ffffff;
 }
+
+/* Tablet Styles (768px to 1023px) */
+@media screen and (max-width: 1023px) {
+    /* Header Styles */
+    header {
+        padding: 0 24px;
+        height: 12vh;
+    }
+    
+    .nav-link {
+        font-size: 1.2rem;
+        gap: 1.5rem;
+    }
+
+    /* ----- Home Page ----- */
+    /* Hero Section */
+    #hero {
+    background-size: 50vh;
+    background-position: right 5% center;
+    }
+
+    /* About CTA */
+    .about-text > h2 {
+        font-size: 8rem;
+        letter-spacing: 8px;
+    }
+
+    #about:hover .about-cta {
+        gap: 10rem;
+    }
+    
+    #about:hover .about-text > h2 {
+        font-size: 6rem;
+    }
+
+    /* Projects Section */
+    .projects-title > h1 {
+        font-size: 6rem;  /* Reduced from 8rem */
+    }
+    
+    .project-card {
+        width: calc(50% - 0.5rem);  /* Keep two columns but with proper spacing */
+    }
+    
+    .project-image {
+        height: 320px;  /* Slightly reduced height */
+    }
+    
+    .project-details-title {
+        font-size: 1.3rem;  /* Slightly smaller font size */
+    }
+    
+    /* Contact Section */
+    .contact-container {
+        gap: 2rem;
+    }
+    
+    .social-links {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    
+    .social-item {
+        width: calc(33.33% - 1rem);
+        margin-bottom: 1rem;
+    }
+
+    /* ----- About Page ----- */
+    /* Hero Section */
+    #hero {
+        background-size: 60vh;
+        height: 65vh;
+    }
+    
+    .hero-details {
+        width: 60%;
+        padding: 0 2.5rem;
+    }
+    
+    .hero-details > h2 {
+        font-size: 1.5rem;
+    }
+    
+    .hero-details > h1 {
+        font-size: 3rem;
+    }
+    
+    .hero-details > p {
+        font-size: 1.8rem;
+    }
+    
+    /* About Page Styles */
+    #about-page > #about {
+        height: 65vh;
+    }
+    
+    #about-page > #about > .about-text > h2 {
+        font-size: 5rem;
+    }
+    
+    /* Profile Section */
+    .profile-section {
+        padding: 16px 24px 24px;
+    }
+    
+    .profile-title {
+        font-size: 1.3rem;
+        text-align: center;
+    }
+    
+    .profile-content {
+        flex-direction: column;
+    }
+    
+    .profile-image {
+        width: 60%;
+    }
+    
+    .profile-details {
+        width: 100%;
+    }
+    
+    /* Skills Section */
+    .skills-section {
+        padding: 32px;
+        margin: 32px;
+    }
+    
+    .skills-title > h2 {
+        font-size: 3rem;
+    }
+    
+    .skills-table {
+        border-spacing: 16px;
+    }
+    
+    /* Timeline Section */
+    .timeline-section {
+        padding: 32px;
+    }
+    
+    .timeline-title > h2 {
+        font-size: 3rem;
+    }
+    
+    /* Contact Section */
+    .contact-section {
+        padding: 32px;
+    }
+    
+    .section-title {
+        font-size: 6rem;
+    }
+    
+    .contact-container {
+        flex-direction: column;
+    }
+    
+    .contact-card, .social-links {
+        width: 100%;
+    }
+    
+    .social-links {
+        flex-wrap: wrap;
+        gap: 1.5rem;
+        justify-content: space-around;
+        margin-top: 2rem;
+    }
+}
+
+/* Mobile Styles (up to 767px) */
+@media screen and (max-width: 767px) {
+    /* Header Styles */
+    header {
+        flex-direction: column;
+        height: auto;
+        padding: 16px;
+        gap: 16px;
+    }
+    
+    .logo-wrapper {
+        height: 10vh;
+    }
+    
+    nav {
+        gap: 1rem;
+    }
+    
+    .nav-link {
+        font-size: 1rem;
+    }
+    
+    /* ----- Home Page ----- */
+    /* Hero Section */
+    #hero {
+        height: auto;
+        flex-direction: column;
+        background-size: 45vh;
+        background-position: bottom center;
+        padding-bottom: 50vh;
+    }
+
+    .hero-details {
+        width: 90%;
+        text-align: center;
+        padding: 2rem 1rem;
+    }
+
+    /* Projects Section */
+    .projects-container {
+        flex-direction: column;
+    }
+    
+    .project-card {
+        width: 100%;
+        margin-bottom: 2rem;
+    }
+    
+    .project-details-title {
+        font-size: 1.2rem;
+    }
+
+    /* Hero Section */
+    #hero {
+        flex-direction: column;
+        height: auto;
+        padding: 2rem 0;
+        background-position: bottom;
+        background-size: 40vh;
+        padding-bottom: 40vh;
+    }
+    
+    .hero-details {
+        width: 100%;
+        padding: 0 1.5rem;
+        text-align: center;
+    }
+    
+    .hero-details > h2 {
+        font-size: 1.2rem;
+    }
+    
+    .hero-details > h1 {
+        font-size: 2.5rem;
+        letter-spacing: 2px;
+    }
+    
+    .hero-details > p {
+        font-size: 1.5rem;
+    }
+    
+    /* About Section */
+    .about-text > h2 {
+        font-size: 5rem;
+        letter-spacing: 4px;
+        padding-top: 30px;
+    }
+
+    #about:hover {
+        padding: 3rem 0 4rem;
+    }
+
+    #about:hover .about-cta {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 4rem;
+        font-size: 1rem;
+    }
+    
+    #about:hover .about-text > h2 {
+        font-size: 4rem;
+        padding-top: 20px;
+    }
+
+    /* ----- About Page ----- */
+    #about-page > #about {
+        height: 50vh;
+        padding: 6rem 16px 0;
+    }
+    
+    #about-page > #about > .about-text > h2 {
+        font-size: 3.5rem;
+        letter-spacing: 4px;
+    }
+    
+    /* Profile Section */
+    .profile-section {
+        padding: 16px 16px 24px;
+        margin: -2rem 0 0;
+    }
+    
+    .profile-title {
+        font-size: 1.1rem;
+        line-height: 1.5;
+    }
+    
+    .profile-image {
+        width: 80%;
+    }
+    
+    /* Skills Section */
+    .skills-section {
+        padding: 24px 16px;
+        margin: 16px;
+    }
+    
+    .skills-title > h2 {
+        font-size: 2.5rem;
+    }
+    
+    .skills-table {
+        display: block;
+    }
+    
+    .skills-table tr {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 16px;
+    }
+    
+    .skills-table td {
+        width: 100%;
+        margin-bottom: 16px;
+    }
+    
+    /* Timeline Section */
+    .timeline-section {
+        padding: 24px 16px;
+    }
+    
+    .timeline-title > h2 {
+        font-size: 2.5rem;
+        text-align: center;
+    }
+    
+    .timeline-line {
+        left: 30px;
+    }
+    
+    .timeline-marker {
+        left: 30px;
+    }
+    
+    .timeline-content {
+        width: calc(100% - 60px);
+        margin-left: 60px !important;
+        padding: 20px;
+    }
+    
+    /* Contact Section */
+    #contact-page > #contact {
+        height: 50vh;
+        padding: 5rem 16px 0;
+    }
+    
+    #contact-page > #contact > .contact-text > h2 {
+        font-size: 4rem;
+    }
+    
+    .contact-card {
+        width: 100%;
+    }
+    
+    .social-links {
+        width: 100%;
+        flex-wrap: wrap;
+        gap: 1rem;
+    }
+    
+    .social-item {
+        width: calc(50% - 1rem);
+    }
+
+    .section-header {
+        margin: 1rem 0 3rem;  /* Reduced margin */
+    }
+    
+    .contact-info {
+        padding: 1.5rem;  /* Reduced padding */
+    }
+    
+    .contact-section {
+        padding: 24px 16px;
+    }
+    
+    .section-title {
+        font-size: 4rem;
+        text-align: center;
+    }
+    
+    .section-subtitle {
+        font-size: 1rem;
+        text-align: center;
+    }
+    
+    .social-icon {
+        width: 4rem;
+        height: 4rem;
+    }
+    
+    .social-icon i {
+        font-size: 2rem;
+    }
+    
+    .social-name {
+        font-size: 0.9rem;
+    }
+    
+    /* About Section (homepage) */
+    #about:hover .about-text > h2 {
+        font-size: 5rem;
+    }
+    
+    #about:hover .about-cta {
+        gap: 1rem;
+        font-size: 1rem;
+    }
+    
+    /* Projects Section */
+    #projects {
+        padding: 3rem 16px 2rem;
+    }
+    
+    .projects-title > h1 {
+        font-size: 4rem;
+    }
+    
+    .project-card {
+        width: 100%;
+    }
+    
+    .project-image {
+        height: 250px;
+    }
+}
+
+/* Small Mobile Styles (up to 480px) */
+@media screen and (max-width: 480px) {
+    /* Header */
+    .nav-link {
+        font-size: 0.9rem;
+    }
+
+    /* Home Page */
+    /* About Section */
+    .about-text > h2 {
+        font-size: 3.5rem;
+        letter-spacing: 2px;
+    }
+    
+    .about-cta {
+        font-size: 1.2rem;
+    }
+    
+    #about:hover .about-text > h2 {
+        font-size: 3rem;
+    }
+    
+    #about:hover .about-cta {
+        gap: 1rem;
+        font-size: 0.9rem;
+    }
+    
+    /* Hero Section */
+    #hero {
+        padding-bottom: 40vh;
+        background-size: 35vh;
+    }
+    
+    .hero-details > h1 {
+        font-size: 2rem;
+        letter-spacing: 2px;
+    }
+    
+    .hero-details > p {
+        font-size: 1.2rem;
+        margin: 10px 0;
+    }
+    
+    /* Projects Section */
+    .projects-title > h1 {
+        font-size: 3rem;
+    }
+    
+    .project-details-title {
+        font-size: 1.2rem;
+    }
+    
+    .project-details-subtitle {
+        flex-direction: column;
+        gap: 5px;
+    }
+    
+    .project-details-subtitle p:not(:last-child)::after {
+        content: "";
+        margin: 0;
+    }
+
+    /* About Page */
+    #about-page > #about > .about-text > h2 {
+        font-size: 2.5rem;
+    }
+    
+    /* Profile Section */
+    .profile-title {
+        font-size: 1rem;
+    }
+    
+    /* Skills Section */
+    .skills-title > h2 {
+        font-size: 2rem;
+    }
+    
+    /* Timeline Section */
+    .timeline-title > h2 {
+        font-size: 2rem;
+    }
+    
+    /* Contact Section */
+    #contact-page > #contact > .contact-text > h2 {
+        font-size: 3rem;
+        letter-spacing: 4px;
+    }
+    
+    .section-title {
+    font-size: 2.5rem;
+    }
+    
+    .social-icon {
+    width: 3rem;
+    height: 3rem;
+    }
+    
+    .social-icon i {
+    font-size: 1.5rem;
+    }
+    
+    .contact-email, .contact-phone {
+        display: block;
+        margin: 10px 0;
+    }
+    
+    .contact-phone {
+        margin-left: 0;
+    }
+    
+    .social-links {
+        gap: 1rem;
+    }
+
+    .upwork {
+        padding: 0.5rem;
+    }
+    
+    /* Footer */
+    footer > p {
+        font-size: 0.8rem;
+        text-align: center;
+    }
+}
